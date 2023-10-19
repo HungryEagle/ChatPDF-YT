@@ -1,7 +1,11 @@
 import { cn } from '@/lib/utils'
-import { Message } from 'ai/react'
 import React from 'react'
 
+interface Message {
+    id: string,
+    content: string;
+    role: string;
+}
 type Props = {
     messages: Message[]
 }
